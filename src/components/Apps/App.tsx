@@ -123,7 +123,7 @@ function App() {
           programa.
         </p>
         <div>
-          <img src="../public/image.png" alt="" />
+          <img src="Image.png" alt="" />
           <span className="justify-end w-4/5 pb-4 mt-[-24px] pr-24 text-gray-400">
             Reunión de tutores pares (Plantilla de Tutores Pares, Enero-Junio
             2024)
