@@ -12,7 +12,8 @@ const CatalogoAsesorias: React.FC<TableProps> = ({ tutors }) => {
 
   return (
     <div className="table-container">
-      <Table>
+      {tutors.length > 0 ? (
+        <Table>
         <thead>
           <tr>
             <th>TUTOR</th>
@@ -30,6 +31,12 @@ const CatalogoAsesorias: React.FC<TableProps> = ({ tutors }) => {
           ))}
         </tbody>
       </Table>
+      ) : (
+        <div className="text-center mt-4 bg-primary-700 text-white p-4 rounded-lg w-[40%] mx-auto">
+          <p>No hay tutores disponibles en este momento.</p>
+        </div>
+      )}
+
     </div>
   );
 }
