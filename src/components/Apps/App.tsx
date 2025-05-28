@@ -1,6 +1,6 @@
 import "../../css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import GoogleMap from "./GoogleMap";
 import Historia from "./Historia";
 import CarruselTutores from "./CarruselTutores";
@@ -8,16 +8,13 @@ import CatalogoAsesorias from "./CatalogoAsesorias";
 import RegistroAsesorias from "./RegistroAsesoria";
 import FormContacto from "./FormContacto";
 import { useApi } from "../../shared/hooks/useApi";
-import { ApiService } from "../../services/api.services";
 import { Tutor } from "../../shared/models/tutor.types";
 import { Log } from "../../shared/models/log.types";
 import FormFeedBack from "./FormFeedBack";
+import { UrlAPI } from "../../shared/hooks/urlAPI";
 
 function App() {
-  const apiService = useMemo(
-    () => new ApiService("http://localhost:3000/api/public"),
-    []
-  );
+  const apiService = UrlAPI();
 
   const {
     fetchAll,
@@ -86,7 +83,7 @@ function App() {
 
       <div className="nuestro_equipo">
         <h2>¡Únete a nuestro equipo!</h2>
-        <img src="../public/image 3.png" alt="Nuestro Euipo UPQROO" />
+        <img src="/image 3.png" alt="Nuestro Equipo UPQROO" />
         <div className="invitacion">
           <p>
             Estamos activamente buscando estudiantes que quieran apoyar este
@@ -123,7 +120,7 @@ function App() {
           programa.
         </p>
         <div>
-          <img src="Image.png" alt="" />
+          <img src="/Image.png" alt="" />
           <span className="justify-end w-4/5 pb-4 mt-[-24px] pr-24 text-gray-400">
             Reunión de tutores pares (Plantilla de Tutores Pares, Enero-Junio
             2024)

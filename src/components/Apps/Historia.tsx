@@ -1,4 +1,3 @@
-// src/components/Historia.tsx
 import '../../css/App.css'
 
 const Historia = () => {
@@ -7,7 +6,7 @@ const Historia = () => {
       <h2>Historia y Objetivos</h2>
       <div className="contenido_imagen">
         <div className="algebra">
-          <img src="Imagen.png" alt="" />
+          <img src="/Imagen.png" alt="Asesoria algebra" />
           <span>Asesoría Algebra (Erick López, 2024)</span>
         </div>
         <div className="parrafo_1">
@@ -25,7 +24,7 @@ const Historia = () => {
         </p>
       </div>
       <div className="imagen_leo">
-        <img src="Tutorias.png" alt="" />
+        <img src="/Tutorias.png" alt="" />
         <span>Asesorías de Matematicas Discretas (Leonardo Rodríguez, 2022)</span>
       </div>
     </div>

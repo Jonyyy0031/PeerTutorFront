@@ -2,15 +2,15 @@
 const tutors = [
   {
     name: "Alejandra Miranda",
-    img: "./public/ejemplo1.jpg",
+    img: "/ejemplo1.jpg",
   },
   {
     name: "Sebastián Pérez",
-    img: "./public/ejemplo2.jpg",
+    img: "/ejemplo2.jpg",
   },
   {
     name: "Pablo Hernández",
-    img: "./public/ejemplo3.avif",
+    img: "/ejemplo3.avif",
   },
 ];
 

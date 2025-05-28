@@ -2,10 +2,10 @@ import Select, { SingleValue } from "react-select";
 import makeAnimated from "react-select/animated";
 import { feedbackForm, Tutor } from "../../shared/models/tutor.types";
 import { Fragment, useMemo, useState } from "react";
-import { ApiService } from "../../services/api.services";
 import { useApi } from "../../shared/hooks/useApi";
 import LoadingSpinner from "./LoadingSpinner";
 import { CircleCheck } from "lucide-react";
+import { UrlAPI } from "../../shared/hooks/urlAPI";
 
 interface TableProps {
   tutors: Tutor[];
@@ -22,17 +22,13 @@ const FormFeedBack: React.FC<TableProps> = ({ tutors, isLoadingTutors }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const apiService = useMemo(
-    () => new ApiService("http://localhost:3000/api/public"),
-    []
-  );
+  const apiService = UrlAPI();
 
   const { sendFeedback, loading } = useApi<feedbackForm>(apiService, "/tutors");
 
   const [formData, setFormData] = useState({
     feedback: "",
   });
-  console.log(formData);
 
   const optionsTutor = useMemo<TutorOptions[]>(() => {
     return tutors.map((tutor) => ({

@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header>
       <img
         className="block m-auto max-w-40 h-auto my-4"
-        src="../public/NuevoLogoUPQROO-PNGOFICIAL-1024x410.png"
+        src="/NuevoLogoUPQROO-PNGOFICIAL-1024x410.png"
         alt="Logo Upqroo"
       />
       <div className="nav-bar">

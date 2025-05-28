@@ -1,4 +1,3 @@
-// src/components/StripedColumnsExample.tsx
 import Table from "react-bootstrap/Table";
 import { Tutor } from "../../shared/models/tutor.types";
 

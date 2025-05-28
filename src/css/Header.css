@@ -70,7 +70,7 @@ li:last-child a {
 }
 
 .nav-bar3 {
-  background-image: linear-gradient(rgba(120, 19, 5, 0.7), rgba(130, 19, 5, 0.7)), url(../public/imagen.jpg);
+  background-image: linear-gradient(rgba(120, 19, 5, 0.7), rgba(130, 19, 5, 0.7)), url(/imagen.jpg);
   height: 250px;
   display: flex;
   justify-content: center;
